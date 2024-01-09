@@ -1,4 +1,5 @@
 import { Outlet, useNavigate, Link } from "react-router-dom";
+import { useState } from "react";
 
 import "boxicons";
 import "./App.css";
@@ -12,9 +13,11 @@ function App() {
     }, 0);
   }
 
+  const [menuShow, setMenuShow] = useState(false);
+
   return (
     <>
-      <header className="flex flex-row w-screen gap-8 justify-center px-6 py-4">
+      <header className="flex flex-row w-screen gap-8 justify-center p-6">
         <div className="icon flex flex-row">
           <box-icon name="menu"></box-icon>
           <box-icon name="menu" rotate="90"></box-icon>
@@ -101,8 +104,20 @@ function App() {
               </li>
             </ul>
           </div>
-          <div className="links-mobile flex flex-row justify-between">
-            <ul className="menu flex flex-row gap-4">
+          <div
+            className="menu"
+            onClick={() => {
+              setMenuShow(!menuShow);
+            }}
+          >
+            Menu
+          </div>
+          <div
+            className={`links-mobile ${
+              menuShow ? "flex" : "hidden"
+            } flex-col justify-between`}
+          >
+            <ul className="menu flex-col gap-4">
               <li>
                 <Link to="#">Live</Link>
               </li>
@@ -125,9 +140,9 @@ function App() {
                 <Link to="#">Help</Link>
               </li>
               <li className="flex flex-row justify-center">
-                <span>More </span>
-                <box-icon name="plus"></box-icon>
-                <div className="first hidden">
+                {/* <span className="text-orange">More </span> */}
+                {/* <box-icon name="plus" color="#ff764d"></box-icon> */}
+                <div className="first">
                   <h1>More on Ableton.com:</h1>
                   <ul>
                     <li>Blog</li>
@@ -139,7 +154,7 @@ function App() {
                     <li>Apprenticeships</li>
                   </ul>
                 </div>
-                <div className="second hidden">
+                <div className="second ">
                   <h1>More from Ableton:</h1>
                   <ul>
                     <li>
@@ -174,17 +189,34 @@ function App() {
                 </div>
               </li>
             </ul>
-            <ul>
+            <ul className="flex flex-row gap-4">
               <li>
-                <Link to="#">Try Live for free</Link>
+                <Link to="#" className="text-blue">
+                  Try Live for free
+                </Link>
               </li>
               <li>
-                <Link to="#">Log in or register</Link>
+                <Link to="#">Account</Link>
+              </li>
+              <li>
+                <Link to="#">Log out</Link>
               </li>
             </ul>
           </div>
         </nav>
       </header>
+      <hr className="line-break" />
+      <ul className="flex flex-row gap-4 p-6">
+        <li className="text-orange">
+          <Link to={"#"}>About</Link>
+        </li>
+        <li>
+          <Link to={"#"}>Jobs</Link>
+        </li>
+        <li>
+          <Link to={"#"}>Apprenticeships</Link>
+        </li>
+      </ul>
       <Outlet />
     </>
   );

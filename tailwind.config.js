@@ -4,11 +4,11 @@ export default {
   theme: {
     colors: {
       yellow: "#fbffa7",
-      orange: "ff764d",
-      light_blue: "b1c5ff",
-      purple: "d5b3ff",
-      green: "b6ffc0",
-      blue: "0000ff",
+      orange: "#ff764d",
+      light_blue: "#b1c5ff",
+      purple: "#d5b3ff",
+      green: "#b6ffc0",
+      blue: "#0000ff",
     },
     extend: {},
   },
