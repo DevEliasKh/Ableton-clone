@@ -1,3 +1,5 @@
+// TODO add animation
+
 import { Outlet, useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -17,12 +19,10 @@ function App() {
 
   return (
     <>
-      <header className="flex flex-row w-screen gap-8 justify-center p-6">
-        <div className="icon flex flex-row">
-          <box-icon name="menu"></box-icon>
-          <box-icon name="menu" rotate="90"></box-icon>
-        </div>
-        <nav className="w-full">
+      <header
+        className={`w-screen p-4 justify-center ${menuShow ? "bg-blue" : ""}`}
+      >
+        <nav className={`w-full ${menuShow ? "bg-blue" : ""}`}>
           <div className="links-desktop hidden">
             <ul className="menu">
               <li>
@@ -105,19 +105,40 @@ function App() {
             </ul>
           </div>
           <div
-            className="menu"
+            className={`flex items-center text-xl font-bold ${
+              menuShow ? "text-white" : "text-black"
+            }`}
             onClick={() => {
               setMenuShow(!menuShow);
             }}
           >
-            Menu
+            <box-icon
+              name="menu"
+              size="md"
+              class={`${!menuShow ? "" : "fill-white"}`}
+            ></box-icon>
+            <box-icon
+              name="menu"
+              rotate="90"
+              size="md"
+              class={`${!menuShow ? "" : "fill-white"}`}
+            ></box-icon>
+            <span className="pl-2">Menu</span>
+            <box-icon
+              name="chevron-down"
+              class={`${!menuShow ? "" : "hidden"}`}
+            ></box-icon>
+            <box-icon
+              name="chevron-up"
+              class={`${menuShow ? "" : "hidden"} fill-white`}
+            ></box-icon>
           </div>
           <div
             className={`links-mobile ${
               menuShow ? "flex" : "hidden"
-            } flex-col justify-between`}
+            } flex-col justify-between pt-4`}
           >
-            <ul className="menu flex-col gap-4">
+            <ul className="menu flex flex-col gap-4 font-bold">
               <li>
                 <Link to="#">Live</Link>
               </li>
@@ -139,12 +160,26 @@ function App() {
               <li>
                 <Link to="#">Help</Link>
               </li>
-              <li className="flex flex-row justify-center">
+              <li>
+                <ul className="flex flex-col gap-4">
+                  <li>
+                    <Link to="#" className="">
+                      Try Live for free
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#" className="font-normal">
+                      Log in or Register
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="flex flex-col justify-center gap-4">
                 {/* <span className="text-orange">More </span> */}
                 {/* <box-icon name="plus" color="#ff764d"></box-icon> */}
-                <div className="first">
+                <div className="first flex flex-col gap-4">
                   <h1>More on Ableton.com:</h1>
-                  <ul>
+                  <ul className="flex flex-col gap-4 font-normal">
                     <li>Blog</li>
                     <li>Ableton for the Classroom</li>
                     <li>Abletn for Colleges and Universities</li>
@@ -155,31 +190,31 @@ function App() {
                   </ul>
                 </div>
                 <div className="second ">
-                  <h1>More from Ableton:</h1>
-                  <ul>
+                  <h1 className="pb-4">More from Ableton:</h1>
+                  <ul className="flex gap-4 font-normal">
                     <li>
-                      <h1>Loop</h1>
+                      <h1 className="pb-3">Loop</h1>
                       <p>
                         Watch Talks, Performances and Features from Ableton's
                         Summit for Music Makers
                       </p>
                     </li>
                     <li>
-                      <h1>Learning Music</h1>
+                      <h1 className="pb-3">Learning Music</h1>
                       <p>
                         Learn the fundamentals of music making right in your
                         browser.
                       </p>
                     </li>
                     <li>
-                      <h1> Learning Synths</h1>
+                      <h1 className="pb-3"> Learning Synths</h1>
                       <p>
                         Get started with synthesis using a web-based synth and
                         accompanying lessons.
                       </p>
                     </li>
                     <li>
-                      <h1>Making Music</h1>
+                      <h1 className="pb-3">Making Music</h1>
                       <p>
                         Some tips from 74 Creative Strategies for Electronic
                         Producers.
@@ -189,24 +224,11 @@ function App() {
                 </div>
               </li>
             </ul>
-            <ul className="flex flex-row gap-4">
-              <li>
-                <Link to="#" className="text-blue">
-                  Try Live for free
-                </Link>
-              </li>
-              <li>
-                <Link to="#">Account</Link>
-              </li>
-              <li>
-                <Link to="#">Log out</Link>
-              </li>
-            </ul>
           </div>
         </nav>
       </header>
       <hr className="line-break" />
-      <ul className="flex flex-row gap-4 p-6">
+      <ul className="flex flex-row gap-4">
         <li className="text-orange">
           <Link to={"#"}>About</Link>
         </li>

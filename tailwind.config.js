@@ -9,6 +9,8 @@ export default {
       purple: "#d5b3ff",
       green: "#b6ffc0",
       blue: "#0000ff",
+      white: "#fff",
+      black: "#000",
     },
     extend: {},
   },
