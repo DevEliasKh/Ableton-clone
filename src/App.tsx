@@ -126,7 +126,7 @@ function App() {
             <span className="pl-2">Menu</span>
             <box-icon
               name="chevron-down"
-              class={`${!menuShow ? "" : "hidden"}`}
+              class={`${!menuShow ? "" : "hidden"} fill-black`}
             ></box-icon>
             <box-icon
               name="chevron-up"
@@ -138,7 +138,7 @@ function App() {
               menuShow ? "flex" : "hidden"
             } flex-col justify-between pt-4`}
           >
-            <ul className="menu flex flex-col gap-4 font-bold">
+            <ul className="menu flex flex-col gap-8 font-bold">
               <li>
                 <Link to="#">Live</Link>
               </li>
@@ -161,14 +161,14 @@ function App() {
                 <Link to="#">Help</Link>
               </li>
               <li>
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-8">
                   <li>
                     <Link to="#" className="">
                       Try Live for free
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" className="font-normal">
+                    <Link to="#" className="font-normal text-sm">
                       Log in or Register
                     </Link>
                   </li>
@@ -178,8 +178,8 @@ function App() {
                 {/* <span className="text-orange">More </span> */}
                 {/* <box-icon name="plus" color="#ff764d"></box-icon> */}
                 <div className="first flex flex-col gap-4">
-                  <h1>More on Ableton.com:</h1>
-                  <ul className="flex flex-col gap-4 font-normal">
+                  <h1 className="text-xl">More on Ableton.com:</h1>
+                  <ul className="flex flex-col gap-6 font-normal">
                     <li>Blog</li>
                     <li>Ableton for the Classroom</li>
                     <li>Abletn for Colleges and Universities</li>
@@ -190,8 +190,8 @@ function App() {
                   </ul>
                 </div>
                 <div className="second ">
-                  <h1 className="pb-4">More from Ableton:</h1>
-                  <ul className="flex gap-4 font-normal">
+                  <h1 className="pb-4 text-xl">More from Ableton:</h1>
+                  <ul className="flex gap-6 font-normal">
                     <li>
                       <h1 className="pb-3">Loop</h1>
                       <p>
