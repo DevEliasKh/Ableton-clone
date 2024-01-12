@@ -12,7 +12,23 @@ export default {
       white: "#fff",
       black: "#000",
     },
-    extend: {},
+    extend: {
+      animation: {
+        navBarAnime: "navBarAnime 0.5s ease-out 0s 1 normal forwards;",
+      },
+      keyframes: {
+        navBarAnime: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0)",
+          },
+        },
+      },
+    },
   },
   plugins: [],
 };

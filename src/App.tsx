@@ -19,9 +19,7 @@ function App() {
 
   return (
     <>
-      <header
-        className={`w-screen p-4 justify-center ${menuShow ? "bg-blue" : ""}`}
-      >
+      <header className={`w-full p-6 ${menuShow ? "bg-blue" : ""}`}>
         <nav className={`w-full ${menuShow ? "bg-blue" : ""}`}>
           <div className="links-desktop hidden">
             <ul className="menu">
@@ -136,7 +134,7 @@ function App() {
           <div
             className={`links-mobile ${
               menuShow ? "flex" : "hidden"
-            } flex-col justify-between pt-4`}
+            } flex-col justify-between pt-4 pl-2 animate-navBarAnime`}
           >
             <ul className="menu flex flex-col gap-8 font-bold">
               <li>
@@ -228,7 +226,7 @@ function App() {
         </nav>
       </header>
       <hr className="line-break" />
-      <ul className="flex flex-row gap-4">
+      <ul className="flex flex-row gap-4 pt-4 pl-4">
         <li className="text-orange">
           <Link to={"#"}>About</Link>
         </li>
