@@ -32,6 +32,7 @@ function About() {
           it for.
         </p>
       </div>
+      <div className="aboutImg2 bgImg mx-auto my-4"></div>
       <div className="aboutText mx-auto my-0 w-8/12">
         <h1 className="text-2xl font-bold py-4">
           We are more than 350 people from 30 different countries divided
@@ -47,6 +48,14 @@ function About() {
           contribute to something big: helping to shape the future of music
           culture.
         </p>
+      </div>
+      <div className="aboutImg3 relative my-8">
+        <div className="greenBox bg-green absolute top-0 z-0"></div>
+        <div className="leftImg inline-block relative z-10">
+          <div className="img1 bgImg"></div>
+          <div className="img2 bgImg"></div>
+        </div>
+        <div className="rightImg bgImg inline-block relative z-10"></div>
       </div>
       <div className="aboutText mx-auto my-0 w-8/12">
         <h1 className="text-2xl font-bold py-4">

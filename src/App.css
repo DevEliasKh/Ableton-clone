@@ -34,7 +34,7 @@ a {
   margin-left: 8vw;
 }
 
-.leftImg {
+.aboutImg .leftImg {
   background-image: url(./assets/pexels-fauxels-3184357.jpg);
   width: 40vw;
   height: 40vw;
@@ -50,4 +50,47 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.aboutImg2 {
+  background-image: url(./assets/pexels-andrea-piacquadio-927022.jpg);
+  width: 65vw;
+  height: 30vw;
+}
+
+.greenBox {
+  width: 65%;
+  height: 78vw;
+}
+
+.aboutImg3 .rightImg {
+  background-image: url(./assets/pexels-andrea-piacquadio-3760069.jpg);
+  width: 40vw;
+  height: 40vw;
+  vertical-align: middle;
+  margin-left: 8vw;
+}
+
+.aboutImg3 .leftImg .img1 {
+  background-image: url(./assets/pexels-jopwell-2422293.jpg);
+  width: 40vw;
+  height: 30vw;
+  vertical-align: middle;
+  margin-left: 8vw;
+  margin-bottom: 5vw;
+}
+.aboutImg3 .leftImg .img2 {
+  background-image: url(./assets/pexels-fauxels-3184357.jpg);
+  width: 40vw;
+  height: 30vw;
+  vertical-align: middle;
+  margin-left: 8vw;
+}
+
+.aboutImg3 .leftImg {
+  vertical-align: middle;
+}
+
+.aboutImg3 {
+  padding: 6.5vw 0;
 }
