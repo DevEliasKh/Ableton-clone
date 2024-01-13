@@ -1,7 +1,7 @@
 function About() {
   return (
     <>
-      <div className="aboutImg flex justify-center items-center box-border">
+      <div className="aboutImgHeader bgImg m-4 flex justify-center items-center box-border">
         <div className="text-9xl font-bold text-orange">Ableton</div>
       </div>
       <div className="aboutText mx-auto my-0 w-8/12">
@@ -15,6 +15,11 @@ function About() {
           2001. Our products are used by a community of dedicated musicians,
           sound designers, and artists from across the world.
         </p>
+      </div>
+      <div className="aboutImg relative my-8">
+        <div className="yellowBox bg-yellow absolute top-0 z-0"></div>
+        <div className="rightImg bgImg inline-block relative z-10"></div>
+        <div className="leftImg bgImg inline-block relative z-10"></div>
       </div>
       <div className="aboutText mx-auto my-0 w-8/12">
         <h1 className="text-2xl font-bold py-4">

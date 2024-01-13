@@ -15,11 +15,39 @@ a {
   color: white;
 }
 
-.aboutImg {
+.aboutImgHeader {
   background-image: url(./assets/pexels-olia-danilevich-4974914.jpg);
   min-height: calc(100vh - 120px);
+}
+
+.yellowBox {
+  width: 58%;
+  height: 58vw;
+  left: 42%;
+}
+
+.aboutImg .rightImg {
+  background-image: url(./assets/pexels-linkedin-sales-navigator-3867842.jpg);
+  width: 40vw;
+  height: 30vw;
+  vertical-align: middle;
+  margin-left: 8vw;
+}
+
+.leftImg {
+  background-image: url(./assets/pexels-fauxels-3184357.jpg);
+  width: 40vw;
+  height: 40vw;
+  vertical-align: middle;
+  margin-left: 8vw;
+}
+
+.aboutImg {
+  padding: 9vw 0;
+}
+
+.bgImg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  margin: 1rem;
 }
