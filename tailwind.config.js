@@ -11,6 +11,7 @@ export default {
       blue: "#0000ff",
       white: "#fff",
       black: "#000",
+      gray: "#eee",
     },
     extend: {
       animation: {
