@@ -80,7 +80,7 @@ a {
   margin-bottom: 5vw;
 }
 .aboutImg3 .leftImg .img2 {
-  background-image: url(./assets/pexels-fauxels-3184357.jpg);
+  background-image: url(./assets/pexels-fauxels-3182781.jpg);
   width: 40vw;
   height: 30vw;
   vertical-align: middle;
@@ -93,4 +93,26 @@ a {
 
 .aboutImg3 {
   padding: 6.5vw 0;
+}
+
+.aboutImg4 {
+  background-image: url(./assets/pexels-philip-boakye-2203495.jpg);
+  width: 65vw;
+  height: 30vw;
+}
+
+.purpleBox {
+  width: 58%;
+  height: 58vw;
+  left: 21%;
+}
+
+.aboutImg .leftImg3 {
+  background-image: url(./assets/pexels-cottonbro-studio-7439129.jpg);
+  height: 40vw;
+  vertical-align: middle;
+}
+
+.blueBox {
+  height: 40vw;
 }
