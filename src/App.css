@@ -109,10 +109,10 @@ a {
 
 .aboutImg .leftImg3 {
   background-image: url(./assets/pexels-cottonbro-studio-7439129.jpg);
-  height: 40vw;
+  height: 30vw;
   vertical-align: middle;
 }
 
 .blueBox {
-  height: 40vw;
+  min-height: max-content;
 }

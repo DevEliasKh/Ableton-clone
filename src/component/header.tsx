@@ -157,8 +157,6 @@ function Header() {
               </ul>
             </li>
             <li className="flex flex-col justify-center gap-4">
-              {/* <span className="text-orange">More </span> */}
-              {/* <box-icon name="plus" color="#ff764d"></box-icon> */}
               <div className="first flex flex-col gap-4">
                 <h1 className="text-xl">More on Ableton.com:</h1>
                 <ul className="flex flex-col gap-6 font-normal">

@@ -1,7 +1,7 @@
 function About() {
   return (
     <>
-      <div className="aboutImgHeader bgImg m-4 flex justify-center items-center box-border">
+      <div className="aboutImgHeader bgImg m-8 flex justify-center items-center box-border">
         <div className="text-9xl font-bold text-orange">Ableton</div>
       </div>
       <div className="aboutText mx-auto my-0 w-8/12">
@@ -107,16 +107,16 @@ function About() {
           to make your transition as easy as possible.
         </p>
       </div>
-      <div className="aboutImg w-screen flex justify-center items-center h-min">
+      <div className="aboutImg w-screen flex flex-col justify-center items-center h-min">
         <div className="w-2/5 bgImg leftImg3 ml-0"></div>
 
-        <div className="w-2/5 bg-light_blue blueBox m-0 flex flex-col justify-center">
-          <span className="p-12 font-semibold text-2xl">
+        <div className="w-2/5 bg-light_blue blueBox m-0 flex flex-col justify-center p-12 gap-8">
+          <span className="font-medium text-2xl">
             We’re really proud of the work we’ve done so far. But there’s so
             much more to come. If you’d like to be a part of it, please join us.
           </span>
           <span>
-            <a href="#" className="p-12 font-semibold text-2xl text-blue">
+            <a href="#" className="font-medium text-2xl text-blue">
               See Latest Jobs!
             </a>
           </span>

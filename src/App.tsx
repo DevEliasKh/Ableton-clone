@@ -17,7 +17,7 @@ function App() {
     <>
       <Header />
       <hr className="line-break" />
-      <ul className="flex flex-row gap-4 pt-4 pl-4">
+      <ul className="flex flex-row gap-4 pt-4 pl-8 font-light">
         <li className="text-orange">
           <Link to={"#"}>About</Link>
         </li>
