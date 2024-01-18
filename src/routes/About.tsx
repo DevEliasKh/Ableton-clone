@@ -107,10 +107,10 @@ function About() {
           to make your transition as easy as possible.
         </p>
       </div>
-      <div className="aboutImg w-screen flex flex-col justify-center items-center h-min">
+      <div className="aboutImg w-screen flex flex-col justify-center items-center h-min desktop:flex-row">
         <div className="w-2/5 bgImg leftImg3 ml-0"></div>
 
-        <div className="w-2/5 bg-light_blue blueBox m-0 flex flex-col justify-center p-12 gap-8">
+        <div className="w-2/5 bg-light_blue blueBox m-0 flex justify-center p-12 gap-8 flex-col">
           <span className="font-medium text-2xl">
             We’re really proud of the work we’ve done so far. But there’s so
             much more to come. If you’d like to be a part of it, please join us.

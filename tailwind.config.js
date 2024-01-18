@@ -2,6 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      desktop: "1024px",
+    },
     colors: {
       yellow: "#fbffa7",
       orange: "#ff764d",

@@ -2,11 +2,16 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 function Header() {
   const [menuShow, setMenuShow] = useState(false);
+  const [desktopMenu, setDesktopMenu] = useState(false);
   return (
     <header className={`w-full p-6 ${menuShow ? "bg-blue" : ""}`}>
       <nav className={`w-full ${menuShow ? "bg-blue" : ""}`}>
-        <div className="links-desktop hidden">
-          <ul className="menu">
+        <div className="links-desktop hidden desktop:flex justify-between px-2">
+          <ul className="menu text-black flex justify-between items-center gap-4 font-semibold text-md">
+            <li>
+              <box-icon name="menu" size="md"></box-icon>
+              <box-icon name="menu" rotate="90" size="md"></box-icon>
+            </li>
             <li>
               <Link to="#">Live</Link>
             </li>
@@ -28,57 +33,25 @@ function Header() {
             <li>
               <Link to="#">Help</Link>
             </li>
-            <li>
-              More<box-icon name="plus"></box-icon>
-              <div className="first">
-                <h1>More on Ableton.com:</h1>
-                <ul>
-                  <li>Blog</li>
-                  <li>Ableton for the Classroom</li>
-                  <li>Abletn for Colleges and Universities</li>
-                  <li>Certified Training</li>
-                  <li>About Ableton</li>
-                  <li>Jobs</li>
-                  <li>Apprenticeships</li>
-                </ul>
-              </div>
-              <div className="second">
-                <h1>More from Ableton:</h1>
-                <ul>
-                  <li>
-                    <h1>Loop</h1>
-                    <p>
-                      Watch Talks, Performances and Features from Ableton's
-                      Summit for Music Makers
-                    </p>
-                  </li>
-                  <li>
-                    <h1>Learning Music</h1>
-                    <p>
-                      Learn the fundamentals of music making right in your
-                      browser.
-                    </p>
-                  </li>
-                  <li>
-                    <h1> Learning Synths</h1>
-                    <p>
-                      Get started with synthesis using a web-based synth and
-                      accompanying lessons.
-                    </p>
-                  </li>
-                  <li>
-                    <h1>Making Music</h1>
-                    <p>
-                      Some tips from 74 Creative Strategies for Electronic
-                      Producers.
-                    </p>
-                  </li>
-                </ul>
-              </div>
+            <li
+              onClick={() => setDesktopMenu(!desktopMenu)}
+              className="text-orange flex items-center"
+            >
+              <span>More</span>
+              <box-icon
+                name="plus"
+                size="sm"
+                class={`fill-orange ${!desktopMenu ? "" : "hidden"}`}
+              ></box-icon>
+              <box-icon
+                name="minus"
+                size="sm"
+                class={`fill-orange ${desktopMenu ? "" : "hidden"}`}
+              ></box-icon>
             </li>
           </ul>
-          <ul>
-            <li>
+          <ul className="flex gap-4 text-lg">
+            <li className="text-blue font-semibold">
               <Link to="#">Try Live for free</Link>
             </li>
             <li>
@@ -86,10 +59,57 @@ function Header() {
             </li>
           </ul>
         </div>
+        <div className={`w-full ${desktopMenu ? "" : "hidden"}`}>
+          <h1 className="font-semibold text-3xl pt-12 pb-6">
+            More on Ableton.com:
+          </h1>
+          <ul className="flex gap-8 font-light">
+            <li>Blog</li>
+            <li>Ableton for the Classroom</li>
+            <li>Abletn for Colleges and Universities</li>
+            <li>Certified Training</li>
+            <li>About Ableton</li>
+            <li>Jobs</li>
+            <li>Apprenticeships</li>
+          </ul>
+        </div>
+        <div className={`w-full ${desktopMenu ? "" : "hidden"} pb-8`}>
+          <h1 className="font-semibold text-3xl pt-12 pb-6">
+            More from Ableton:
+          </h1>
+          <ul className="flex">
+            <li>
+              <h1 className="text-2xl pb-2">Loop</h1>
+              <p>
+                Watch Talks, Performances and Features from Ableton's Summit for
+                Music Makers
+              </p>
+            </li>
+            <li>
+              <h1 className="text-2xl pb-2">Learning Music</h1>
+              <p>
+                Learn the fundamentals of music making right in your browser.
+              </p>
+            </li>
+            <li>
+              <h1 className="text-2xl pb-2"> Learning Synths</h1>
+              <p>
+                Get started with synthesis using a web-based synth and
+                accompanying lessons.
+              </p>
+            </li>
+            <li>
+              <h1 className="text-2xl pb-2">Making Music</h1>
+              <p>
+                Some tips from 74 Creative Strategies for Electronic Producers.
+              </p>
+            </li>
+          </ul>
+        </div>
         <div
           className={`flex items-center text-xl font-bold ${
             menuShow ? "text-white" : "text-black"
-          }`}
+          } desktop:hidden`}
           onClick={() => {
             setMenuShow(!menuShow);
           }}

@@ -114,5 +114,6 @@ a {
 }
 
 .blueBox {
-  min-height: max-content;
+  max-height: max-content;
+  min-height: 30vw;
 }
