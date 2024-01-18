@@ -73,33 +73,35 @@ function Header() {
             <li>Apprenticeships</li>
           </ul>
         </div>
-        <div className={`w-full ${desktopMenu ? "" : "hidden"} pb-8`}>
+        <div
+          className={`w-full ${desktopMenu ? "" : "hidden"} pb-8 font-light`}
+        >
           <h1 className="font-semibold text-3xl pt-12 pb-6">
             More from Ableton:
           </h1>
           <ul className="flex">
             <li>
-              <h1 className="text-2xl pb-2">Loop</h1>
+              <h1 className="text-2xl pb-2 font-normal">Loop</h1>
               <p>
                 Watch Talks, Performances and Features from Ableton's Summit for
                 Music Makers
               </p>
             </li>
             <li>
-              <h1 className="text-2xl pb-2">Learning Music</h1>
+              <h1 className="text-2xl pb-2 font-normal">Learning Music</h1>
               <p>
                 Learn the fundamentals of music making right in your browser.
               </p>
             </li>
             <li>
-              <h1 className="text-2xl pb-2"> Learning Synths</h1>
+              <h1 className="text-2xl pb-2 font-normal"> Learning Synths</h1>
               <p>
                 Get started with synthesis using a web-based synth and
                 accompanying lessons.
               </p>
             </li>
             <li>
-              <h1 className="text-2xl pb-2">Making Music</h1>
+              <h1 className="text-2xl pb-2 font-normal">Making Music</h1>
               <p>
                 Some tips from 74 Creative Strategies for Electronic Producers.
               </p>

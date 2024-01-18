@@ -7,6 +7,11 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.main {
+  width: 100rem;
+  flex-shrink: 0;
+}
 .line-break {
   color: rgba(0, 0, 0, 0.2);
 }

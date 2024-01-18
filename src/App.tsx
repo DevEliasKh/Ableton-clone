@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="main bg-white">
       <Header />
       <hr className="line-break" />
       <ul className="flex flex-row gap-4 pt-4 pl-8 font-light">
@@ -31,7 +31,7 @@ function App() {
       <Outlet />
       <hr className="line-break" />
       <Footer />
-    </>
+    </div>
   );
 }
 
