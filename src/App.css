@@ -26,9 +26,8 @@ a {
 }
 
 .yellowBox {
-  width: 58%;
+  width: 58vw;
   height: 58vw;
-  left: 42%;
 }
 
 .aboutImg .rightImg {
@@ -36,7 +35,6 @@ a {
   width: 40vw;
   height: 30vw;
   vertical-align: middle;
-  margin-left: 8vw;
 }
 
 .aboutImg .leftImg {
@@ -44,7 +42,6 @@ a {
   width: 40vw;
   height: 40vw;
   vertical-align: middle;
-  margin-left: 8vw;
 }
 
 .aboutImg {
@@ -64,7 +61,7 @@ a {
 }
 
 .greenBox {
-  width: 65%;
+  width: 65vw;
   height: 78vw;
 }
 
@@ -81,7 +78,6 @@ a {
   width: 40vw;
   height: 30vw;
   vertical-align: middle;
-  margin-left: 8vw;
   margin-bottom: 5vw;
 }
 .aboutImg3 .leftImg .img2 {
@@ -89,7 +85,6 @@ a {
   width: 40vw;
   height: 30vw;
   vertical-align: middle;
-  margin-left: 8vw;
 }
 
 .aboutImg3 .leftImg {
@@ -107,9 +102,8 @@ a {
 }
 
 .purpleBox {
-  width: 58%;
+  width: 58vw;
   height: 58vw;
-  left: 21%;
 }
 
 .aboutImg .leftImg3 {

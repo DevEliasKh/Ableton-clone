@@ -16,10 +16,10 @@ function About() {
           sound designers, and artists from across the world.
         </p>
       </div>
-      <div className="aboutImg relative my-8">
-        <div className="yellowBox bg-yellow absolute top-0 z-0"></div>
+      <div className="aboutImg grid my-8 grid-cols-2 items-center">
         <div className="rightImg bgImg inline-block relative z-10"></div>
-        <div className="leftImg bgImg inline-block relative z-10"></div>
+        <div className="yellowBox bg-yellow z-0 row-start-1 col-end-3 justify-self-end"></div>
+        <div className="leftImg bgImg inline-block relative z-10 col-end-3 row-start-1 justify-self-end"></div>
       </div>
       <div className="aboutText mx-auto my-0 w-8/12">
         <h1 className="text-2xl font-bold py-4">
@@ -49,13 +49,13 @@ function About() {
           culture.
         </p>
       </div>
-      <div className="aboutImg3 relative my-8">
-        <div className="greenBox bg-green absolute top-0 z-0"></div>
-        <div className="leftImg inline-block relative z-10">
+      <div className="aboutImg3 grid my-8 grid-cols-2 items-center">
+        <div className="leftImg z-10 row-start-1 col-start-1 justify-self-start">
           <div className="img1 bgImg"></div>
           <div className="img2 bgImg"></div>
         </div>
-        <div className="rightImg bgImg inline-block relative z-10"></div>
+        <div className="greenBox bg-green z-0 row-start-1 col-start-1 justify-self-start"></div>
+        <div className="rightImg bgImg row-start-1 col-end-3 justify-self-end z-10"></div>
       </div>
       <div className="aboutText mx-auto my-0 w-8/12">
         <h1 className="text-2xl font-bold py-4">
@@ -90,10 +90,10 @@ function About() {
           production techniques and best practices.
         </p>
       </div>
-      <div className="aboutImg relative my-8">
-        <div className="purpleBox bg-purple absolute top-0 z-0"></div>
-        <div className="rightImg bgImg inline-block relative z-10"></div>
-        <div className="leftImg bgImg inline-block relative z-10"></div>
+      <div className="aboutImg grid my-8 grid-cols-2 items-center">
+        <div className="rightImg bgImg row-start-1 col-start-1 z-10"></div>
+        <div className="purpleBox bg-purple z-0 row-start-1 col-end-3 col-start-1 justify-self-center"></div>
+        <div className="leftImg bgImg z-10 col-end-3 row-start-1 justify-self-end"></div>
       </div>
       <div className="aboutText mx-auto my-0 w-8/12">
         <h1 className="text-2xl font-bold py-4">
