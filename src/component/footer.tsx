@@ -1,25 +1,29 @@
 function Footer() {
   return (
-    <div className="p-16 flex flex-col gap-8">
-      <section className="font-semibold text-4xl">Ableton</section>
-      <section>
-        <p className="font-semibold pb-2">Sign up to our newsletter</p>
-        <span className="font-light">
-          Enter your email address to stay up to date with the latest offers,
-          tutorials, downloads, surveys and more.
-        </span>
+    <div className="p-16 flex flex-col gap-8 desktop:grid desktop:grid-cols-3 desktop:auto-rows-auto">
+      <section className="font-semibold text-4xl desktop:col-span-3">
+        Ableton
       </section>
       <section className="">
+        <div className="pb-2">
+          <p className="font-semibold pb-2">Sign up to our newsletter</p>
+          <span className="font-light">
+            Enter your email address to stay up to date with the latest offers,
+            tutorials, downloads, surveys and more.
+          </span>
+        </div>
         <form action="" className="flex flex-grow">
           <input
             type="mail"
             placeholder="Email Address"
-            className="bg-gray py-2 h-8 px-2 font-light flex-grow"
+            className="bg-gray py-2 desktop:h-12 px-2 font-light flex-grow h-8"
           />
-          <button className="bg-blue text-white py-2 px-4">Sign Up</button>
+          <button className="bg-blue text-white py-2 px-4 desktop:h-12 h-8 text-sm">
+            Sign Up
+          </button>
         </form>
       </section>
-      <section>
+      <section className="desktop:col-start-1 desktop:row-start-2">
         <ul className="flex flex-col gap-2 font-light">
           <li>
             Register Live Or Push
@@ -32,14 +36,14 @@ function Footer() {
             Jobs<box-icon name="chevron-right" size="xs"></box-icon>
           </li>
         </ul>
+        <div>
+          <box-icon type="logo" name="youtube" size="lg"></box-icon>
+          <box-icon type="logo" name="facebook-square" size="lg"></box-icon>
+          <box-icon name="instagram-alt" type="logo" size="lg"></box-icon>
+          <box-icon type="logo" name="twitter" size="lg"></box-icon>
+        </div>
       </section>
-      <section>
-        <box-icon type="logo" name="youtube" size="lg"></box-icon>
-        <box-icon type="logo" name="facebook-square" size="lg"></box-icon>
-        <box-icon name="instagram-alt" type="logo" size="lg"></box-icon>
-        <box-icon type="logo" name="twitter" size="lg"></box-icon>
-      </section>
-      <section className="flex flex-col gap-2 font-light">
+      <section className="flex flex-col gap-2 font-light desktop:col-start-2 desktop:row-start-2">
         <p className="font-semibold">Education</p>
         <p>
           Offers for students and teachers
@@ -94,7 +98,7 @@ function Footer() {
           </select>
         </div>
       </section>
-      <section className="flex flex-col gap-2 text-xs">
+      <section className="flex flex-col gap-2 text-xs desktop:flex-row desktop:col-start-1 desktop:col-span-2">
         <p>Contact Us</p>
         <p>Press Resources</p>
         <p>Legal Info</p>
@@ -102,7 +106,7 @@ function Footer() {
         <p>Cookie Settings</p>
         <p>Imprint</p>
       </section>
-      <section className="flex items-center">
+      <section className="flex items-center desktop:self-start">
         <box-icon name="menu" size="md"></box-icon>
         <box-icon name="menu" rotate="90" size="md"></box-icon>{" "}
         <span className="font-light">Made in Berlin</span>
