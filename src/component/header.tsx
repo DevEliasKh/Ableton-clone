@@ -59,7 +59,11 @@ function Header() {
             </li>
           </ul>
         </div>
-        <div className={`w-full ${desktopMenu ? "" : "hidden"}`}>
+        <div
+          className={`w-full ${
+            desktopMenu ? "" : "hidden"
+          } animate-navBarAnime`}
+        >
           <h1 className="font-semibold text-3xl pt-12 pb-6">
             More on Ableton.com:
           </h1>
@@ -74,7 +78,9 @@ function Header() {
           </ul>
         </div>
         <div
-          className={`w-full ${desktopMenu ? "" : "hidden"} pb-8 font-light`}
+          className={`w-full ${
+            desktopMenu ? "" : "hidden"
+          } pb-8 font-light animate-navBarAnime`}
         >
           <h1 className="font-semibold text-3xl pt-12 pb-6">
             More from Ableton:

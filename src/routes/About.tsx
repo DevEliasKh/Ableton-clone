@@ -2,7 +2,9 @@ function About() {
   return (
     <>
       <div className="aboutImgHeader bgImg m-8 flex justify-center items-center box-border">
-        <div className="text-9xl font-bold text-orange">Ableton</div>
+        <div className="desktop:text-9xl font-bold text-orange text-8xl">
+          Ableton
+        </div>
       </div>
       <div className="aboutText mx-auto my-0 w-8/12">
         <h1 className="text-2xl font-bold py-4">
